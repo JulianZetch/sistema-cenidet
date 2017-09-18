@@ -1,0 +1,106 @@
+*
+	margin: 0px
+	padding: 0px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	margin: 0px
+	padding: 0px
+.contenedor
+	margin: 0px 0px 15px 0px
+	//background: none
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: column
+	//background: red
+	justify-content: space-between
+	//align-self: flex-end
+
+
+@import estilos/_arriba.sass
+@import estilos/_medio.sass
+@import estilos/_contenido.sass
+@import estilos/_login.sass
+//background-image: url(img/bgmodal.png)
+
+
+//DISPOSITIVOS MOVILES//
+@media screen and (max-width: 750px)
+
+	body
+		//padding-top: 35px
+
+	.contenedor
+		height: auto
+		width: auto
+	.arriba
+		display: flex
+		width: auto
+		height: auto
+
+
+	#logo
+		width: 95%
+		//height: 75px
+	#titulo
+		font-size: 16px
+
+	.form
+		top: auto
+		left: 10%
+		position: absolute
+			
+
+	@import estilos/_menu1Responsive
+
+	.abajo
+		//padding: 10px 0px
+		//background: red
+		display: flex
+		flex-direction: column
+		width: 100%
+		//height: 100%
+		align-items: center
+		height: auto
+	.caja
+		padding: 0px
+		max-width: 90%
+		margin: 0px 0px
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: start
+		//background: orange
+		align-items: center
+	figure
+		width: 250px
+		height: auto
+		.trasera
+			//backface-visibility: visible
+			transform: perspective(600px) rotateY(179deg)
+		#ocupacion
+			font-size: 16px
+
+	.contenedor_tarjeta:hover figure
+		transform: perspective(0px) rotateY(0deg)
+		background: none
+		#ocupacion
+			display: none
+
+	.contenido ul li
+		font-size:  15px
+		background: white
+		ul
+			padding: 0px
+			font-size: 15px
+			//margin: 0px
+			//width: 100%		
+		
+
+
+
+
+

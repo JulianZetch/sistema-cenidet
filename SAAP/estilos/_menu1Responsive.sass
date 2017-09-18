@@ -1,0 +1,70 @@
+.menu_bar
+	display: flex
+	justify-content: flex-start
+	width: auto
+	flex-direction: row-reverse
+	height: 35px
+	position: fixed
+	top: 180px
+	background: rgb(11,11,10)
+	right: 0
+	padding-top: 5px
+
+	.bt_menu
+		display: block
+		padding: 20px
+		color: white
+		overflow: hidden
+		//margin: 20px
+		font-size: 25px
+		font-decoration: bold
+		text-decoration: none
+		//background: red
+		position: relative
+		height: 250px
+
+
+	//align-self: 1
+header .menu_bar
+	a 
+		color: white
+	//background: orange
+	span
+		float: right
+		font-size: 20px
+		color: white
+		margin: 0px 15px
+		display: block
+header
+	width: 100%
+
+header nav
+	width: 70%
+	//0display: block
+	height: calc(100% - 35px)
+	position: fixed
+	//left: 0px
+	right: 100%
+	margin: 0px
+	//overflow: scroll
+
+	ul li
+		display: block
+		border-bottom: 1px solid white
+		a
+			display: block
+
+header nav ul li:hover .children
+	display: none
+
+
+header nav ul li .children
+	background: aqua
+	width: 100%	
+	position: relative
+	li a
+		margin-left: 20px
+
+header nav ul li .caret
+	float: right
+	//display: none		

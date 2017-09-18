@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower|Sorts+Mill+Goudy" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower|Lateef|Sorts+Mill+Goudy" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js" ></script>
+	<script src="main.js"></script>
+	<title>sevac</title>
+</head>
+<body>
+<div class="contenedor">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeLogin();">cerrar x</a></div>
+				<table>
+					<h1>Bienvenido</h1>
+					<hr>
+					<tr>
+						<td>Correo:</td>
+						<td><input type="text" placeholder="Ingresar"></td>
+					</tr>
+					<tr>
+						<td>Contraseña:</td>
+						<td><input type="password" placeholder="Ingresar"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Ingresar" id="boton"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	<div class="arriba">
+			<img id= "logo" src="header_cenidet.png">
+			<h1 id="titulo">Sistema Administrador de Procesos Academicos</h1><!-- Sistema Academico de Administracion de Procesos SAAP-->				
+	<div class="contenedor_menu">
+
+		<header>
+			<div class="menu_bar">
+				<a class="bt-menu">
+					<span class="icon-list2"></span>
+				</a>
+			</div>
+					<nav class="menu">
+						<ul>
+							<li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+							<li><a href="index.html#seccion3"><span class="icon-user-tie"></span>Contacto</a></li>
+							<li class="submenu">
+								<a><span class="icon-search"></span>
+								Novedades
+									<span class="caret icon-circle-down"></span>
+								</a>
+									<ul class="children">
+										<li><a href="index.html#ia">Inteligencia Artificial</a></li>
+										<li><a href="index.html#ds">Desarrollo Software</a></li>
+										<li><a href="index.html#sd">Sistemas Distribuidos</a></li>
+									</ul>
+							</li>
+
+							<li><a id="ask" href="index.html#acerca_de"><span class="icon-embed2"></span>Acerca de</a></li>
+							<li><a href="javascript:openLogin();"><span class="icon-enter"></span>Ingresar</a></li>
+
+						</ul>
+					</nav>	
+		</header>
+	</div>
+	</div>
+	
+	<div class="abajo">
+		<div class="caja">
+			<div class="contenedor_tarjeta">
+				<a href="index.html#sd">
+					<figure>
+						<img src="img/sd.jpg" class="frontal"><p id="ocupacion">Sistemas Distribuidos</p>
+						<figcaption class="trasera">
+							
+							<hr>
+							<p>"Colección de computadoras separadas físicamente y conectadas entre sí por una red de comunicaciones"</p>
+							
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="contenedor_tarjeta">
+				<a href="index.html#ia">
+					<figure>
+						<img src="img/ia.jpg" class="frontal"><p id="ocupacion">Inteligencia Artificial</p>
+						<figcaption class="trasera">
+							
+							<hr>
+							<p>"Programa de computación diseñado para realizar determinadas operaciones que se consideran propias de la inteligencia humana, como el autoaprendizaje"</p>
+							
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="contenedor_tarjeta">
+				<a href="index.html#ds">
+					<figure>
+						<img src="img/ds.jpg" class="frontal"><p id="ocupacion">Desarrollo Software</p>
+						<figcaption class="trasera">							
+							<hr>
+							<p>"Aplicación práctica del conocimiento científico al diseño y construcción de programas de computadora y a la documentación asociada requerida para desarrollar, operar y mantenerlos"</p>
+							
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="contenido">
+				<ul>
+					<li>
+						<h5><a name="novedades" href="#"></a>Noticias</h5>
+						<ul>
+							<li class="children"><a name="ds" href="#">Desarrollo Software</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<a href="#" class="myButton">Ver mas</a>
+							</li>
+							<li><a name="ia" href="#">Inteligencia Artificial</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<a href="#" class="myButton">Ver mas</a>
+							</li>
+							<li><a name="sd" href="#">Sistemas Distribuidos</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<a href="#" class="myButton">Ver mas</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li> <a name="acerca_de"></a><h5>Acerca de SAPA</h5>
+					<p>
+					Esta plataforma ha sido creada con el fin de hacerle mas facil la vida a los alumnos y al personal academico ;)</p>
+					<p>
+						Sientete libre de usarla. Es para ti. Esperamos que te ayude en tu formacion como investigador y que sigas tu camino como profesionista. Muchas gracias
+					</p>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>		
+</body>
+</html>
