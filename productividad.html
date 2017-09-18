@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="productividad.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower|Sorts+Mill+Goudy" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Indie+Flower|Lateef|Sorts+Mill+Goudy" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js" ></script>
+	<script src="main.js"></script>
+	<title>sevac</title>
+</head>
+<div class="contenedor">
+<div class="contenedorFormularios">
+	<div class="congreso" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeCongreso();">cerrar x</a>
+			</div>
+				<h1>Asistencia a Congresos</h1><hr>
+				 <form id="congreso">
+					<label>Nombre del Congreso<input type="text" name="nombre_congreso" required/></label>
+					<label>Tipo de participacion <br>
+						<select name="participacion">
+							<option>Asistente</option>
+							<option>Ponente</option>
+						</select>
+					</label>
+					<label>Fecha Inicio<input type="date" required></label>
+					<label>Fecha Fin<input type="date" required></label>
+					<label>Evidencia<input type="file" name="evidencia"></label>
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="articulos" id="formulario">
+		<div class="login">
+			<div class="form">
+				<div class="cerrar"><a href="javascript:closeArticulos();">cerrar x</a>
+				</div>
+				<form>
+					<div class="formcont">
+						<div class="formin">
+							<h1>Articulos</h1><hr>
+							<label>Titulo</label><textarea name="tipo_articulo" required></textarea>
+							<label>Tipo de Publicacion <br>
+								<select name="participacion">
+									<option>Nacional</option>
+									<option>Internacional</option>
+								</select>
+							</label>
+							<label>Posgrado<br>
+								<select name="participacion">
+									<option>Maestria</option>
+									<option>Doctorado</option>
+								</select>
+							</label>														
+							<!--<label>Pais donde se publico:</label>
+								<input type="text" name="pais_articulo" id="pais" list="paises"/>
+								<datalist id="paises">
+								<option value="España" />
+								<option value="México" />
+								<option value="Argentina" />
+								<option value="Perú" />
+								<option value="Colombia" />
+								<option value="Otro país" /> 
+								</datalist>-->
+							<label>Fecha de publicacion<input type="date" name="fecha_Articulo" required></label>
+							<!--<label>Tipo de articulo:</label>
+								<input type="text" name="tipo_articulo" id="pais" list="articulos"/>
+								<datalist id="articulos">
+								<option value="Articulo original" />
+								<option value="Guia" />
+								<option value="Investigacion" />
+								<option value="Metodologia de Investigacion" />
+								</datalist>-->
+							<label>Subir Articulo<input type="file" name="articulo" required></label>
+							<label>Correo o carta de aceptacion<input type="file" name="articulo"></label>
+							<label>Autores<input type="text" name="autores"><span class="icon-user-plus"></span></label>
+							<label>ISSN impreso<input type="file" name="issn" required></label>
+						</div>
+						<div class="formin">
+							<h1>Revista</h1> <hr>
+							<label>Nombre de la revista<input type="text" name="nombre_revista"></label>
+							<label>Indice<input type="number" name="indice_revista"></label>
+							<label>Numero de revista<input type="number" name="no_revista"></label>
+							<div class="datosRevista">
+								<label>Volumen<input id="datosRevista" type="number" name="no_revista"></label>
+								<label>Año<input id="datosRevista" type="number" name="año_revista"></label>
+								<label>Pag Inicio<input id="datosRevista" type="number" name="año_revista"></label>
+								<label>Pag Final<input id="datosRevista" type="number" name="año_revista"></label>
+							</div>
+							<label>ISSN Electronico<input type="file" name="articulo"></label>
+						</div>
+					</div>
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="estancias" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeEstancias();">cerrar x</a>
+			</div>
+				<h1>Estancias</h1><hr>
+				 <form id="congreso">
+					<label>Lugar<input type="text" name="lugar" required/></label>
+					<label>Asesor<input type="text" name="asesor" placeholder="Nombre completo" required/></label>
+					<label>Asesor Anfitrion<input type="text" name="anfitrion" placeholder="Nombre completo" required/></label>
+					<label>Nombre de Institucion<input type="text" name="institucion" required/></label>					
+					<label>Fecha Inicio<input type="date" name="fecha" required/></label>
+					<label>Fecha Fin<input type="date" name="fecha" required/></label>
+					<label>Subir constancia o carta de Liberacion<input type="file" name="evidencia"></label>
+					
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="patentes" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closePatentes();">cerrar x</a>
+			</div>
+				<h1>Patentes</h1><hr>
+				 <form id="congreso">
+					<label>Nombre<input type="text" name="nombre" required/></label>
+					<label>Titulo<input type="number" min="1" max="5" required></label>
+					<label>Autores<input type="number" min="1" max="5" required></label>
+					<label>Fecha<input type="date" name="fecha" required/></label>
+					<label>Evidencia<input type="file" name="evidencia"></label>
+					<textarea id="resultados" name="resultados" placeholder="Resultados"></textarea>
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="capitulos" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeCapitulos();">cerrar x</a>
+			</div>
+				<h1>Capitulos</h1><hr>
+				 <form id="congreso">
+					<label>Titulo<input type="text" name="titulo" required/></label>
+					<label>Editorial<input type="text" name="editorial" required></label>
+											
+						<label>Año de Edicion<input id="datosRevista" type="number" name="año" required></label>
+						<label>No. de Edicion<input id="datosRevista" type="number" min="1" max="10" required></label>
+						<label>No. de Capitulo<input id="datosRevista" type="number" min="1" max="5" required></label>
+						<label>Pag. Inicio<input id="datosRevista" type="number" required></label>
+						<label>Pag. Final<input  type="number"  required></label>
+					
+					<label>Autores<input type="text" name="autores" required></label>
+					<label>Autores<input type="text" name="autores" required></label>
+					<label>Evidencia<input type="file" name="evidencia"></label>
+					<textarea id="resultados" name="resultados" placeholder="Resultados"></textarea>
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="desarrollosTec" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeDesarrollosTec();">cerrar x</a>
+			</div>
+				<h1>Desarrollos Tecnologicos</h1><hr>
+				 <form id="congreso">
+					<label>Nombre<input type="text" name="nombre" required/></label>
+					<label>Tipo</label>
+					<input type="text" name="pais_articulo" id="pais" list="tipo_desarrollo"/>
+					<datalist id="tipo_desarrollo">
+					<option value="Desarrollo Sustentable" />
+					<option value="Sector Salud" />
+					<option value="Nano Tecnologia" />
+					<option value="Ambiental" />
+					</datalist>
+					<label>Titulo<input type="text" required></label>
+					<label>Autores<input required></label>
+					<label>Documento de Respaldo<input type="file" name="respaldo"></label>
+					<label>Evidencia(fotos)<input type="file" name="evidencia"></label>
+					<textarea id="resultados" name="resumen" placeholder=" Objetivo y Resumen"></textarea>
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>
+	<div class="desarrolloSW" id="formulario">
+		<div class="login">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeDesarrolloSW();">cerrar x</a>
+			</div>
+				<h1>Desarrollo Software</h1><hr>
+				 <form id="congreso">
+					<label>Titulo<input type="text" name="nombre" required/></label>
+					<label>Tipo</label>
+					<input type="text" name="pais_articulo" id="pais" list="tipo_desarrollo"/>
+					<datalist id="tipo_desarrollo">
+					<option value="Desarrollo Sustentable" />
+					<option value="Sector Salud" />
+					<option value="Nano Tecnologia" />
+					<option value="Ambiental" />
+					</datalist>
+					<label>Autores<input required></label>
+					<label>Evidencia<input type="file" name="evidencia"></label>
+					<textarea id="resultados" name="resumen" placeholder=" Objetivo y Resumen"></textarea>
+					
+					<div class="botones">
+						<input class="button" type="submit" value="Guardar">
+						<input class="button" type="reset" value="Borrar">
+					</div>
+	 			</form>
+			</div>
+		</div>
+	</div>	
+</div>
+
+	<div class="arriba">
+			<img id= "logo" src="header_cenidet.png">
+			<h1 id="titulo">Productividad</h1>				
+			<div class="contenedor_menu">	
+				<header>
+					<div class="menu_bar">
+						<a class="bt-menu">
+							<span class="icon-list2"></span>
+						</a>
+					</div>
+					<nav class="menu">
+						<ul>							
+							<li><a href="#"><span class="icon-profile"></span>Productividad</a></li>
+							<li><a href="alumno.html"><span class="icon-earth"></span>Inicio</a></li>
+							<li class="submenu">
+								<a><span class="icon-file-text2"></span>
+								Documentos
+									<span class="caret icon-circle-down"></span>
+								</a>
+									<ul class="children">
+										<li><a href="#">Formatos</a></li>
+										<li><a href="#">Correccion</a></li>
+										
+									</ul>
+							</li>
+	
+							<li><a href="#"><span class="icon-notification"></span>Recordatorios</a></li>
+							<li><a href="#"><span class="icon-exit"></span>Cerrar Sesion</a></li>
+	
+						</ul>
+					</nav>	
+				</header>
+			</div>
+	</div>
+	<div class="abajo">
+<!--		<div class="fotoPerfil">
+			
+		</div>-->
+		<div class="productos">
+			<ul>
+				<h3>Publicaciones</h3>
+				<li>
+					<ul>
+						<li><a href="javascript:openArticulos();">Articulos</a></li>
+						<li><a href="javascript:openCapitulos();">Capitulo de libro</a></li>
+						<li><a href="#">Memorias de Congreso</a></li>
+					</ul>
+				</li>
+				<h3>Movilidad</h3>
+				<li>
+					<ul>
+						<li><a href="javascript:openEstancias();">Estancias</a></li>
+						<li><a href="javascript:openCongreso();">Asistencia a Congresos</a></li>
+						<li><a href="#">Cursos</a></li>
+					</ul>
+				</li>
+				<h3>Desarrollos</h3>
+				<li>
+					<ul>
+						<li><a href="javascript:openPatentes();">Patentes</a></li>
+						<li><a href="javascript:openDesarrollosTec();">Tecnologicos</a></li>
+						<li><a href="javascript:openDesarrolloSW();">Software</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
